@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name oled_breakout)(type KiCad)(uri "$(KIPRJMOD)/oled_breakout.pretty")(options "")(descr ""))
+)
