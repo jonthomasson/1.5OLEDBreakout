@@ -1,0 +1,558 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:oled
+LIBS:OLED_1.5_128X128_breakout-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FAN5331SX U1
+U 1 1 5895CEE9
+P 2830 5480
+F 0 "U1" H 2680 5170 60  0000 C CNN
+F 1 "FAN5331SX" H 2855 5790 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 2830 5480 60  0001 C CNN
+F 3 "" H 2830 5480 60  0001 C CNN
+	1    2830 5480
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 5895CF6F
+P 2830 4810
+F 0 "L1" V 3015 4810 50  0000 C CNN
+F 1 "10uH" V 2924 4810 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1210" H 2830 4810 50  0001 C CNN
+F 3 "" H 2830 4810 50  0001 C CNN
+	1    2830 4810
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D1
+U 1 1 5895CFB2
+P 3645 4810
+F 0 "D1" H 3645 4594 50  0000 C CNN
+F 1 "BAT54T1G" H 3645 4685 50  0000 C CNN
+F 2 "oled_breakout:SOD-123" H 3645 4810 50  0001 C CNN
+F 3 "" H 3645 4810 50  0001 C CNN
+	1    3645 4810
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5895D006
+P 4025 5240
+F 0 "R1" H 4095 5286 50  0000 L CNN
+F 1 "100K" V 4030 5145 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 3955 5240 50  0001 C CNN
+F 3 "" H 4025 5240 50  0001 C CNN
+	1    4025 5240
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5895D0AA
+P 4025 5745
+F 0 "R2" H 4095 5791 50  0000 L CNN
+F 1 "10K" V 4025 5665 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 3955 5745 50  0001 C CNN
+F 3 "" H 4025 5745 50  0001 C CNN
+	1    4025 5745
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5895D11D
+P 4530 5230
+F 0 "C2" H 4560 5305 50  0000 L CNN
+F 1 ".1uF" H 4550 5170 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4530 5230 50  0001 C CNN
+F 3 "" H 4530 5230 50  0001 C CNN
+	1    4530 5230
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 5895D147
+P 1915 5820
+F 0 "C1" H 1960 5905 50  0000 L CNN
+F 1 "10uF" H 1955 5755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1915 5820 50  0001 C CNN
+F 3 "" H 1915 5820 50  0001 C CNN
+	1    1915 5820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3280 5680 3330 5680
+Wire Wire Line
+	3330 5680 3330 6080
+$Comp
+L GND #PWR01
+U 1 1 5895D29C
+P 3330 6080
+F 0 "#PWR01" H 3330 5830 50  0001 C CNN
+F 1 "GND" H 3335 5907 50  0000 C CNN
+F 2 "" H 3330 6080 50  0001 C CNN
+F 3 "" H 3330 6080 50  0001 C CNN
+	1    3330 6080
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3280 5480 4530 5480
+Wire Wire Line
+	4025 5390 4025 5595
+Connection ~ 4025 5480
+Wire Wire Line
+	4025 5090 4025 4810
+Wire Wire Line
+	3795 4810 4745 4810
+Wire Wire Line
+	4530 4810 4530 5130
+Connection ~ 4025 4810
+Wire Wire Line
+	4530 5480 4530 5330
+Wire Wire Line
+	3280 5280 3370 5280
+Wire Wire Line
+	3370 5280 3370 4810
+Wire Wire Line
+	2930 4810 3495 4810
+Connection ~ 3370 4810
+Wire Wire Line
+	2730 4810 2320 4810
+Wire Wire Line
+	2320 4810 2320 5680
+Wire Wire Line
+	1915 5280 2430 5280
+Wire Wire Line
+	2320 5680 2430 5680
+Connection ~ 2320 5280
+Wire Wire Line
+	1915 5065 1915 5720
+Wire Wire Line
+	4025 5895 4025 6080
+$Comp
+L GND #PWR02
+U 1 1 5895D766
+P 4025 6080
+F 0 "#PWR02" H 4025 5830 50  0001 C CNN
+F 1 "GND" H 4030 5907 50  0000 C CNN
+F 2 "" H 4025 6080 50  0001 C CNN
+F 3 "" H 4025 6080 50  0001 C CNN
+	1    4025 6080
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1915 5920 1915 6080
+$Comp
+L GND #PWR03
+U 1 1 5895D934
+P 1915 6080
+F 0 "#PWR03" H 1915 5830 50  0001 C CNN
+F 1 "GND" H 1920 5907 50  0000 C CNN
+F 2 "" H 1915 6080 50  0001 C CNN
+F 3 "" H 1915 6080 50  0001 C CNN
+	1    1915 6080
+	1    0    0    -1  
+$EndComp
+Connection ~ 1915 5280
+Text Label 1915 5065 3    60   ~ 0
++3V3
+Text Label 4745 4810 2    60   ~ 0
++13V
+Connection ~ 4530 4810
+$Comp
+L ER_OLED015_1C U2
+U 1 1 5895E4CB
+P 8600 2765
+F 0 "U2" H 7960 1245 60  0000 L CNN
+F 1 "ER_OLED015_1C" H 8165 4380 60  0000 L CNN
+F 2 "oled_breakout:CONNECTORS_FPC_SFV30R_4STBE1HLF" H 8100 3965 60  0001 C CNN
+F 3 "" H 8100 3965 60  0001 C CNN
+	1    8600 2765
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5895E8BD
+P 7340 1665
+F 0 "R4" V 7425 1665 50  0000 C CNN
+F 1 "50" V 7340 1665 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7270 1665 50  0001 C CNN
+F 3 "" H 7340 1665 50  0001 C CNN
+	1    7340 1665
+	0    1    1    0   
+$EndComp
+$Comp
+L D D3
+U 1 1 5895EA59
+P 6640 1665
+F 0 "D3" H 6750 1700 50  0000 C CNN
+F 1 "1N4148" H 6645 1565 50  0000 C CNN
+F 2 "oled_breakout:SOD-323" H 6640 1665 50  0001 C CNN
+F 3 "" H 6640 1665 50  0001 C CNN
+	1    6640 1665
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 5895EAF5
+P 6175 1665
+F 0 "D2" H 6280 1700 50  0000 C CNN
+F 1 "1N4148" H 6190 1570 50  0000 C CNN
+F 2 "oled_breakout:SOD-323" H 6175 1665 50  0001 C CNN
+F 3 "" H 6175 1665 50  0001 C CNN
+	1    6175 1665
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 5895ED15
+P 6980 1565
+F 0 "C7" V 6940 1645 50  0000 C CNN
+F 1 "1uF" V 7020 1670 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6980 1565 50  0001 C CNN
+F 3 "" H 6980 1565 50  0001 C CNN
+	1    6980 1565
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 5895EEBE
+P 6405 1465
+F 0 "C5" V 6370 1545 50  0000 C CNN
+F 1 "10uF" V 6440 1585 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1206" H 6405 1465 50  0001 C CNN
+F 3 "" H 6405 1465 50  0001 C CNN
+	1    6405 1465
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5895EFAA
+P 6120 1365
+F 0 "C3" V 6085 1445 50  0000 C CNN
+F 1 "10uF" V 6160 1490 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1206" H 6120 1365 50  0001 C CNN
+F 3 "" H 6120 1365 50  0001 C CNN
+	1    6120 1365
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7490 1665 7750 1665
+Wire Wire Line
+	7190 1665 6790 1665
+Wire Wire Line
+	6325 1665 6490 1665
+Wire Wire Line
+	7750 1565 7080 1565
+Wire Wire Line
+	7750 1465 6505 1465
+Wire Wire Line
+	7750 1365 6220 1365
+Wire Wire Line
+	6020 1365 5750 1365
+Wire Wire Line
+	5750 1265 5750 1960
+$Comp
+L GND #PWR04
+U 1 1 5895FB38
+P 5750 1960
+F 0 "#PWR04" H 5750 1710 50  0001 C CNN
+F 1 "GND" H 5755 1787 50  0000 C CNN
+F 2 "" H 5750 1960 50  0001 C CNN
+F 3 "" H 5750 1960 50  0001 C CNN
+	1    5750 1960
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1265 5750 1265
+Connection ~ 5750 1365
+Wire Wire Line
+	6305 1465 5750 1465
+Connection ~ 5750 1465
+Wire Wire Line
+	6025 1665 5750 1665
+Connection ~ 5750 1665
+Wire Wire Line
+	6880 1565 5750 1565
+Connection ~ 5750 1565
+Text Label 7745 1365 2    60   ~ 0
++13V
+Text Label 7735 1565 2    60   ~ 0
++3V3
+$Comp
+L R R3
+U 1 1 589609C2
+P 6520 3365
+F 0 "R3" V 6605 3365 50  0000 C CNN
+F 1 "600K" V 6520 3365 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6450 3365 50  0001 C CNN
+F 3 "" H 6520 3365 50  0001 C CNN
+	1    6520 3365
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 3365 6670 3365
+$Comp
+L C_Small C6
+U 1 1 58960D78
+P 6605 3865
+F 0 "C6" V 6565 3945 50  0000 C CNN
+F 1 "10uF" V 6645 3970 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1206" H 6605 3865 50  0001 C CNN
+F 3 "" H 6605 3865 50  0001 C CNN
+	1    6605 3865
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 58960EE8
+P 6380 3765
+F 0 "C4" V 6340 3845 50  0000 C CNN
+F 1 "1uF" V 6420 3870 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6380 3765 50  0001 C CNN
+F 3 "" H 6380 3765 50  0001 C CNN
+	1    6380 3765
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6370 3365 6050 3365
+Wire Wire Line
+	6050 3365 6050 4520
+$Comp
+L GND #PWR05
+U 1 1 589610E5
+P 6050 4520
+F 0 "#PWR05" H 6050 4270 50  0001 C CNN
+F 1 "GND" H 6055 4347 50  0000 C CNN
+F 2 "" H 6050 4520 50  0001 C CNN
+F 3 "" H 6050 4520 50  0001 C CNN
+	1    6050 4520
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4165 6050 4165
+Connection ~ 6050 4165
+Wire Wire Line
+	7750 3965 7635 3965
+Wire Wire Line
+	7635 3965 7635 4165
+Connection ~ 7635 4165
+Wire Wire Line
+	7750 3865 6705 3865
+Wire Wire Line
+	6505 3865 6050 3865
+Connection ~ 6050 3865
+Wire Wire Line
+	7750 3765 6480 3765
+Wire Wire Line
+	6280 3765 6050 3765
+Connection ~ 6050 3765
+Text Label 7730 3865 2    60   ~ 0
++3V3
+NoConn ~ 7750 4065
+NoConn ~ 7750 3665
+NoConn ~ 7750 3565
+NoConn ~ 7750 3465
+NoConn ~ 7750 1765
+$Comp
+L CONN_01X17 P1
+U 1 1 589635DE
+P 4225 2375
+F 0 "P1" H 4143 1350 50  0000 C CNN
+F 1 "BREAKOUT" H 4143 1441 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x17" H 4225 2375 50  0001 C CNN
+F 3 "" H 4225 2375 50  0001 C CNN
+	1    4225 2375
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7750 1865 7350 1865
+Text Label 7350 1865 0    60   ~ 0
+D7
+Wire Wire Line
+	7750 1965 7350 1965
+Text Label 7350 1965 0    60   ~ 0
+D6
+Wire Wire Line
+	7750 2065 7350 2065
+Text Label 7350 2065 0    60   ~ 0
+D5
+Wire Wire Line
+	7750 2165 7350 2165
+Text Label 7350 2165 0    60   ~ 0
+D4
+Wire Wire Line
+	7750 2265 7350 2265
+Text Label 7350 2265 0    60   ~ 0
+D3
+Wire Wire Line
+	7750 2365 7350 2365
+Text Label 7350 2365 0    60   ~ 0
+D2
+Wire Wire Line
+	7750 2465 7350 2465
+Text Label 7350 2465 0    60   ~ 0
+D1/SDIN
+Wire Wire Line
+	7750 2565 7350 2565
+Text Label 7350 2565 0    60   ~ 0
+D0/SCK
+Wire Wire Line
+	7750 2665 7350 2665
+Text Label 7350 2665 0    60   ~ 0
+E/RD#
+Wire Wire Line
+	7750 2765 7350 2765
+Text Label 7350 2765 0    60   ~ 0
+R/W#
+Wire Wire Line
+	7750 2865 7350 2865
+Text Label 7350 2865 0    60   ~ 0
+BS0
+Wire Wire Line
+	7750 2965 7350 2965
+Text Label 7350 2965 0    60   ~ 0
+BS1
+Wire Wire Line
+	7750 3065 7350 3065
+Text Label 7350 3065 0    60   ~ 0
+CS#
+Wire Wire Line
+	7750 3165 7350 3165
+Text Label 7350 3165 0    60   ~ 0
+D/C#
+Wire Wire Line
+	7750 3265 7350 3265
+Text Label 7350 3265 0    60   ~ 0
+RES#
+Wire Wire Line
+	4025 1575 3625 1575
+Text Label 3625 1575 0    60   ~ 0
+D7
+Wire Wire Line
+	4025 1675 3625 1675
+Text Label 3625 1675 0    60   ~ 0
+D6
+Wire Wire Line
+	4025 1775 3625 1775
+Text Label 3625 1775 0    60   ~ 0
+D5
+Wire Wire Line
+	4025 1875 3625 1875
+Text Label 3625 1875 0    60   ~ 0
+D4
+Wire Wire Line
+	4025 1975 3625 1975
+Text Label 3625 1975 0    60   ~ 0
+D3
+Wire Wire Line
+	4025 2075 3625 2075
+Text Label 3625 2075 0    60   ~ 0
+D2
+Wire Wire Line
+	4025 2175 3625 2175
+Text Label 3625 2175 0    60   ~ 0
+D1/SDIN
+Wire Wire Line
+	4025 2275 3625 2275
+Text Label 3625 2275 0    60   ~ 0
+D0/SCK
+Wire Wire Line
+	4025 2375 3625 2375
+Text Label 3625 2375 0    60   ~ 0
+E/RD#
+Wire Wire Line
+	4025 2475 3625 2475
+Text Label 3625 2475 0    60   ~ 0
+R/W#
+Wire Wire Line
+	4025 2575 3625 2575
+Text Label 3625 2575 0    60   ~ 0
+BS0
+Wire Wire Line
+	4025 2675 3625 2675
+Text Label 3625 2675 0    60   ~ 0
+BS1
+Wire Wire Line
+	4025 2775 3625 2775
+Text Label 3625 2775 0    60   ~ 0
+CS#
+Wire Wire Line
+	4025 2875 3625 2875
+Text Label 3625 2875 0    60   ~ 0
+D/C#
+Wire Wire Line
+	4025 2975 3625 2975
+Text Label 3625 2975 0    60   ~ 0
+RES#
+Wire Wire Line
+	4025 3075 3625 3075
+Wire Wire Line
+	4025 3175 3625 3175
+Wire Wire Line
+	3625 3175 3625 3280
+$Comp
+L GND #PWR06
+U 1 1 589646B6
+P 3625 3280
+F 0 "#PWR06" H 3625 3030 50  0001 C CNN
+F 1 "GND" H 3630 3107 50  0000 C CNN
+F 2 "" H 3625 3280 50  0001 C CNN
+F 3 "" H 3625 3280 50  0001 C CNN
+	1    3625 3280
+	1    0    0    -1  
+$EndComp
+Text Label 3625 3075 0    60   ~ 0
++3V3
+Text Notes 5885 1900 0    60   ~ 0
+D2+D3 must be >= 1.4V
+Text Notes 5795 3220 0    60   ~ 0
+R3 = (VCC-6V)/12.5uA\n     = (13.5-6)/.0000125\n     = 600K
+Text Notes 2750 4480 0    60   ~ 0
+13V Boost
+Text Notes 2195 6575 0    60   ~ 0
+VOUT = 1.23V * (1+R1/R2)\nVOUT = 13.53V
+Text Notes 2180 6820 0    60   ~ 0
+This is .5V above the recommended voltage,\nbut uses common resistors for easy assembly.
+$EndSCHEMATC
