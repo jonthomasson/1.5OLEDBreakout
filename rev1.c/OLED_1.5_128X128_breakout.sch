@@ -467,64 +467,64 @@ Wire Wire Line
 Text Label 7350 3265 0    60   ~ 0
 RES#
 Wire Wire Line
-	4025 1575 3625 1575
-Text Label 3625 1575 0    60   ~ 0
+	4025 2975 3625 2975
+Text Label 3625 2975 0    60   ~ 0
 D7
 Wire Wire Line
-	4025 1675 3625 1675
-Text Label 3625 1675 0    60   ~ 0
+	4025 2875 3625 2875
+Text Label 3625 2875 0    60   ~ 0
 D6
 Wire Wire Line
-	4025 1775 3625 1775
-Text Label 3625 1775 0    60   ~ 0
+	4025 2775 3625 2775
+Text Label 3625 2775 0    60   ~ 0
 D5
 Wire Wire Line
-	4025 1875 3625 1875
-Text Label 3625 1875 0    60   ~ 0
+	4025 2675 3625 2675
+Text Label 3625 2675 0    60   ~ 0
 D4
 Wire Wire Line
-	4025 1975 3625 1975
-Text Label 3625 1975 0    60   ~ 0
+	4025 2575 3625 2575
+Text Label 3625 2575 0    60   ~ 0
 D3
 Wire Wire Line
-	4025 2075 3625 2075
-Text Label 3625 2075 0    60   ~ 0
+	4025 2475 3625 2475
+Text Label 3625 2475 0    60   ~ 0
 D2
 Wire Wire Line
-	4025 2175 3625 2175
-Text Label 3625 2175 0    60   ~ 0
+	4025 2375 3625 2375
+Text Label 3625 2375 0    60   ~ 0
 D1/SDIN
 Wire Wire Line
 	4025 2275 3625 2275
 Text Label 3625 2275 0    60   ~ 0
 D0/SCK
 Wire Wire Line
-	4025 2375 3625 2375
-Text Label 3625 2375 0    60   ~ 0
+	4025 2175 3625 2175
+Text Label 3625 2175 0    60   ~ 0
 E/RD#
 Wire Wire Line
-	4025 2475 3625 2475
-Text Label 3625 2475 0    60   ~ 0
+	4025 2075 3625 2075
+Text Label 3625 2075 0    60   ~ 0
 R/W#
 Wire Wire Line
-	4025 2575 3625 2575
-Text Label 3625 2575 0    60   ~ 0
+	4025 1975 3625 1975
+Text Label 3625 1975 0    60   ~ 0
 BS0
 Wire Wire Line
-	4025 2675 3625 2675
-Text Label 3625 2675 0    60   ~ 0
+	4025 1875 3625 1875
+Text Label 3625 1875 0    60   ~ 0
 BS1
 Wire Wire Line
-	4025 2775 3625 2775
-Text Label 3625 2775 0    60   ~ 0
+	4025 1775 3625 1775
+Text Label 3625 1775 0    60   ~ 0
 CS#
 Wire Wire Line
-	4025 2875 3625 2875
-Text Label 3625 2875 0    60   ~ 0
+	4025 1675 3625 1675
+Text Label 3625 1675 0    60   ~ 0
 D/C#
 Wire Wire Line
-	4025 2975 3625 2975
-Text Label 3625 2975 0    60   ~ 0
+	4025 1575 3625 1575
+Text Label 3625 1575 0    60   ~ 0
 RES#
 Wire Wire Line
 	4025 3075 3625 3075
