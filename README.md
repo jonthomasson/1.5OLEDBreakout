@@ -6,7 +6,7 @@ Who doesn't love OLED's? Their relatively low power requirements as well as vibr
 
 Scouring the internet for a decent OLED display, I came across this one from buydisplay.com. It's a 128x128 RGB display, with 1.5" diagonal measurement. The controller, SSD1351, supports a 8, 16, or 18 bit parallel interface, as well as SPI for communications. It seemed perfect for the projects I had in mind. Most breakout boards out there only take advantage of the SPI pins of the controller, and at least one of my projects would require access to the parallel interface, so I decided to just build my own board to suite my needs. Hopefully someone else finds it useful.
 
-After tying BS0 and BS1 to ground to enable SPI, I tested the OLED with the adafruit  SSD1351 driver library.
+After tying BS0 and BS1 to ground to enable SPI, I tested the OLED with the [adafruit  SSD1351 driver library](https://github.com/adafruit/Adafruit-SSD1351-library).
 
 ![OLED Breakout running test program from Adafruit SSD1351 library](https://lh3.googleusercontent.com/y4ClTLt4kAX8JY1dKa6sqs7vdYiofKGVTie4jn05ViLuXUgRtfliAkvOQJpFIHKcxbY5IMfaXAFJBssHu1E88YOobrSxGxJNTLpL0vp6Zd6FlKBXTo66tCligUWRmpi4B-y3I1IG1mRnOPmSMy1saUY_TC6bhmHcT097Y_9XeMewFZ6gIpO0dHUi8202Tj8GK1nLAiKfaPo9id4H8oyBSnGFJolL1EJjttHMiJUVCb-rYyqxYrRq-1DkzXndbePQ2UB7_a3rNHXMVxm9ckazghD_cso4vzfK0zZiqWSPPlbHIqk4VLP70oqA0YUMicrwR6aCFZNmCf0xLnEaA2TOq5fg2tcWwUYV6lFBXaj-i0VX0AKvYsrpO4njbEx_Fc5QV9GlqZ1m3qw9et5-l_-75v5WtyyH-voDqTXSWaypxpCvmOQn6aRz6hso7l0ZJA7IMqYpJdn8nc4jl7tD_1Vy_iXxlzS0GhvjnlnNiUe1VF_73AkG9gy7djEWCmAo503nMlJnyAu_ZKygwwvjtXJX9rwIkJqwH1QLG1kzK3Qn45Fj8wCG1L35cVAAhO7uHmXZC_s8sjkL9HtpOOVGZzgroxAuKkO6G_ZH3xS-sGTg=w1593-h896-no)
 
